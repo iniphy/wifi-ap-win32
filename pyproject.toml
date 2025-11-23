@@ -7,10 +7,9 @@ name = "wifi-ap-win32"
 version = "0.1.0"
 description = "Programmatic WiFi Access Point (AP) on Windows"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 classifiers = [
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
@@ -18,9 +17,12 @@ classifiers = [
 ]
 dependencies = [
   "msgpack==1.0.5",
+  "pyinstaller==6.16",
   "websockets==14.1",
+  "winrt.windows.devices.enumeration",
   "winrt-windows-devices-wifidirect",
   "winrt-windows-foundation",
+  "winrt-windows-foundation-collections",
   "winrt-windows-security-credentials",
 ]
 
